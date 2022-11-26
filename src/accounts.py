@@ -21,7 +21,7 @@ def before_request():
 @app.teardown_request
 def teardown_request(exception):
     g.cnx.close()
-  
+
 
 @app.route("/health")
 def health():
